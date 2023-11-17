@@ -1,34 +1,41 @@
 <div class="row">
-    <div class="col-xs-12">
-        <img src="" alt="" class="img-responsive">
-    </div>
+  <div class="col-xs-12">
+    <img
+      src="{{ recipeDetail.imagePath }}"
+      alt="{{ recipeDetail.name }}"
+      class="img-responsive"
+      style="max-height: 250px;"
+    />
+  </div>
 </div>
 <div class="row">
-    <div class="col-xs-12">
-        <h1>Recipe Name</h1>
-    </div>
+  <div class="col-xs-12">
+    <h1>{{ recipeDetail.name }}</h1>
+  </div>
 </div>
 <div class="row">
-    <div class="col-xs-12">
-        <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-              Manage Recipe
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Add To Shopping List</a></li>
-              <li><a class="dropdown-item" href="#">Edit Recipe</a></li>
-              <li><a class="dropdown-item" href="#">Delete Recipe</a></li>
-            </ul>
-          </div>
+  <div class="col-xs-12">
+    <div class="dropdown">
+      <button
+        type="button"
+        class="btn btn-primary dropdown-toggle"
+        data-bs-toggle="dropdown"
+      >
+        Manage Recipe
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Add To Shopping List</a></li>
+        <li><a class="dropdown-item" href="#">Edit Recipe</a></li>
+        <li><a class="dropdown-item" href="#">Delete Recipe</a></li>
+      </ul>
     </div>
+  </div>
 </div>
 <div class="row">
-    <div class="col-xs-12">
-       Description
-    </div>
+  <div class="col-xs-12">
+    {{ recipeDetail.description }}
+  </div>
 </div>
 <div class="row">
-    <div class="col-xs-12">
-       Ingredients
-    </div>
+  <div class="col-xs-12">Ingredients</div>
 </div>
