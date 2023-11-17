@@ -7,7 +7,6 @@ import { Component, EventEmitter, Input } from '@angular/core';
 })
 export class AppComponent {
   loadedFeature: string = 'recipe';
-  // @Input() featureInput = new EventEmitter<string>();
 
   onNavigate(feature: string) {
     this.loadedFeature = feature;
