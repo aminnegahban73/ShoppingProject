@@ -7,10 +7,7 @@ import { Ingredient } from '../shared/ingredient.model';
   styleUrls: ['./shopping-list.component.css'],
 })
 export class ShoppingListComponent {
-  ingredients: Ingredient[] = [
-    new Ingredient('Apples', 12),
-    new Ingredient('Banana', 5),
-  ];
+  ingredients: Ingredient[] = [new Ingredient('Apples', 12)];
 
   onIngredientAdded(ingredient: Ingredient) {
     this.ingredients.push(ingredient);
