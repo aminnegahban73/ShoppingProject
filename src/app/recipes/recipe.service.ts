@@ -6,8 +6,7 @@ import { Recipe } from './recipe.model';
   providedIn: 'root',
 })
 export class RecipeService {
-
-  @Output() recipeSelected = new EventEmitter<Recipe>();
+  recipeSelected = new EventEmitter<Recipe>();
 
   constructor() {}
   private recipes: Recipe[] = [
