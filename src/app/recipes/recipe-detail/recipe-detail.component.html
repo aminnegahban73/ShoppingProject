@@ -4,7 +4,7 @@
       src="{{ recipeDetail.imagePath }}"
       alt="{{ recipeDetail.name }}"
       class="img-responsive"
-      style="max-height: 250px;"
+      style="max-height: 250px"
     />
   </div>
 </div>
@@ -20,10 +20,12 @@
         type="button"
         class="btn btn-primary dropdown-toggle"
         data-bs-toggle="dropdown"
+        appDropdown
+        #r="appDropDown"
       >
         Manage Recipe
       </button>
-      <ul class="dropdown-menu">
+      <ul  [ngClass]="{'show':r.isOpen}" class="dropdown-menu">
         <li><a class="dropdown-item" href="#">Add To Shopping List</a></li>
         <li><a class="dropdown-item" href="#">Edit Recipe</a></li>
         <li><a class="dropdown-item" href="#">Delete Recipe</a></li>
