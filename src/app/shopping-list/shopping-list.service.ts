@@ -21,10 +21,10 @@ export class ShoppingListService {
   }
 
   public addIngredientFormRecipe(ingredients: Ingredient[]) {
+    this.ingredients.push(...ingredients);
+    this.ingredientsChanged.emit(this.ingredients.slice());
     // for (let ingredient of ingredients) {
     //   this.ingredients.push(ingredient);
     // }
-    this.ingredients.push(...ingredients);
-    this.ingredientsChanged.emit(this.ingredients.slice());
   }
 }
